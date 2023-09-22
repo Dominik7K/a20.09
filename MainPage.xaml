@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="a20._09.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            HorizontalOptions="Center">
+
+            <Label 
+                Text="Podaj e-mail"    
+            />
+            <Entry
+                x:Name="mailLbl"
+                Text=""
+                TextChanged="sprawdzMail"
+            />
+            <Button
+                Text="Sprawdź"
+                Clicked="sprawdzMail"
+            />
+            <Label 
+                Text=""
+                x:Name="komunikatLbl"
+            />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
